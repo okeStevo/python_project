@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static', filename='second.css')}}">
+
+</head>
+
+<body>
+
+    <h1>All categories</h1>
+    <div class="overallcont">
+        {% for course in courses %}
+            <div class="leftupcont">
+                <a href="courses/{{course.link}}" style="text-decoration: none; color: black;" class="inside"><img src="static/images/{{course.image}}"" alt="">
+                    <h3 style="color: black;">
+                        {{course.title}}
+                    </h3>
+                    <p> {{course.names}}</p>
+                    <div class="icons">
+                        <p style=margin:5px ;>{{course.rating}}</p>
+
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                            style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+                            class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+                    </div>
+                    <div class="naira">
+                        <i class="fa-solid fa-naira-sign"> 100000</i><span style="text-decoration: line-through; margin: 6px;" >80000</span>
+                    </div>
+
+                </a>
+            </div>
+        {%endfor%}
+    </div>
+    </div>
+</body>
+
+</html>

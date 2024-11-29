@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/each.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+  
+    <nav>
+      <div class="navbar">
+        <div class="insider">
+            
+          <section class="logo">
+            <img src="/static/images/cih.png" style="width: 60px" />
+          </section>
+        </div>
+        <div class="secondinsider">
+          <ul>
+            <li>Login</li>
+            <li> Sign Up</li>
+        </ul>
+            
+    </nav>
+      </div>
+    </div>
+    <section>
+      <div class="tabs">
+        <div class="buy">
+          <iframe width="390" height="315" src="https://www.youtube.com/embed/4ZgGIWj_A-w?si=LSrzo1UeX9rZUGMx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="fir"></div>
+          <div class="sec"></div>
+
+        </div>
+       
+        <div class="icons" style="color: white; text-align: left;height: 400px; width: 1300px; border:  solid 2px black;background-color: black;">
+          <h1>{{course.title}}</h1>
+          <h1 style="width: 600px;">Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps</h1>
+          <p style="margin: 5px; display: inline;" ;>{{course.rating}}</p>
+          <div class="st" style="display: inline;">
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i
+              ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+              ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+              ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <h5>(298,859)</h5>
+              <h5>100+ Student &nbsp;</h5>
+          </div>
+
+          - &nbsp;
+        </div>
+        <div style="display: flex; flex-wrap: nowrap;  width: 50rem; margin-left: 29px; margin-bottom: 10rem; border-radius: 10px; border: .3px solid rgb(0, 0, 0); box-sizing: border-box; text-align: center; white-space: normal;">
+          <ul style=" gap: 30px; display: grid; grid-template-columns: repeat(2, 13rem); align-items: center;">
+            {% for goal in course.goals %}
+            <li style="word-spacing: 1px; text-align: left; white-space: normal; display: inline-block;">{{goal | safe}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <p style="margin-left: 30px">{{course.names | safe}}</p>
+      <div class="order" style="margin-top: 40rem;">
+       
+      </div>
+      {% if course.place %}{% endif %}
+        <div class="maingoal">
+      
+        </div>
+      </div>
+      <div class="req">
+        <iframe width="390" height="315" src="https://www.youtube.com/embed/4ZgGIWj_A-w?si=LSrzo1UeX9rZUGMx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+ 
+    </section>
+  </body>
+</html>

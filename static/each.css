@@ -1,0 +1,125 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  background-color: white;
+  color: black;
+}
+.navbar {
+  border: solid black 2px;
+  width: 99%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+.insider {
+  /* border: solid white 2px; */
+  width: 100px;
+  height: 50px;
+}
+.secondinsider {
+  /* border: solid white 2px ; */
+  width: 400px;
+  height: 80px;
+}
+.tabs {
+  /* border: solid white 2px ; */
+  width: 100%;
+  height: 200px;
+}
+div.icons {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+  padding: 0;
+  color: white !important;
+}
+
+.goals {
+  /* border: solid 2px white; */
+  height: 300px;
+  width: 99%;
+/* }
+.maingoal {
+  border: black 2px solid;
+  width: 50%;
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 300px; */
+}
+.icons {
+  margin-left: 25px;
+}
+.order {
+  height: 80px;
+  width: px;
+  margin-left: 30px;
+}
+.secondinsider {
+  display: flex;
+  padding: 20px;
+  margin-top: 30px;
+  text-decoration: none;
+  justify-content: space-around;
+}
+p {
+  color: white;
+}
+h1 {
+  color: rgb(255, 255, 255);
+}
+h5 {
+  color: rgb(255, 255, 255);
+}
+.buy {
+  border: solid black 2px;
+  height: 900px;
+  width: 400px;
+  position: absolute;
+  top: 200px;
+  margin-left: 900px;
+}
+.req {
+  width: 390px;
+  height: 309px;
+  border: solid blue;
+  margin-top: 300px;
+  margin-left: 30px;
+}
+ul {
+  display: flex;
+  gap: 30px;
+  text-decoration: none;
+}
+nav ul li:nth-of-type(5) {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+nav ul li {
+  padding: 8px;
+  border-radius: 6px;
+}
+
+nav ul li:hover {
+  background-color: blue;
+  color: white;
+  transition: ease-in 0.3s;
+}
+.fir {
+  width: 300px;
+  height: 80px;
+  border: solid 2px black;
+  margin-top: 70px;
+  margin: 45px auto;
+}
+.sec {
+  width: 300px;
+  height: 80px;
+  border: solid 2px black;
+  margin-top: 60px;
+  margin: 45px auto;
+}

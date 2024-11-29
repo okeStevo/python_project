@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(56, 49, 49);
+}
+.contact{
+    padding: 60px 13%;
+    background: white;
+;
+}
+.maincnt{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+
+}.contactcnt img{
+    height: auto;
+    width: 160px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.contactcnt li{
+    margin-bottom: 18px;
+    text-decoration: none;
+}
+.contactcnt li a{
+    display: block;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all .4s ease;
+}.contactcnt li a :hover{
+    transform: translateX(10px);
+    color: blue;
+}

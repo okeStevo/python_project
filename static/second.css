@@ -1,0 +1,72 @@
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+}
+
+.overallcont {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 0 auto;
+
+}
+div.icons{
+    margin-left: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.leftupcont {
+    border: solid black 1px;
+    height: 340px;
+    width: 250px;
+    transition: .3s ease-in-out;
+
+}
+
+
+.leftupcont:hover {
+    transform: scale(1.05);
+}
+
+.inside {
+    /* border: solid black 1px; */
+    height: 200px;
+    width: 250px;
+}
+
+img {
+    height: 200px;
+    width: 250px;
+}
+
+h3 {
+    margin-left: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.fa-solid fa-star {
+    margin-left: 10px;
+}
+div.naira{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.fa-solid fa-naira-sign{
+    margin-left: 10px;
+}

@@ -1,0 +1,42 @@
+body{
+    background-color: white;
+}
+.about{
+    background: white;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+.abtimg img{
+width: 100%;
+height: auto;
+}
+.abtxt h2{
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.abtxt p{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.abtxt h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.abtxt h5{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.btn{
+    width: 400px;
+    height: 600px;
+    background: blue;
+   
+}
